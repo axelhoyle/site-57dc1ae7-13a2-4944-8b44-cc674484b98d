@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidan hittades inte – Salong K</title>
+  <meta name="description" content="Den sida du letar efter finns inte. Gå tillbaka till Salong K:s startsida.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script>
+    (function(){
+      try{
+        var t=localStorage.getItem('theme');
+        if(t) document.documentElement.setAttribute('data-theme',t);
+      }catch(e){}
+    })();
+  </script>
+  <link rel="stylesheet" href="site-kit.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .error-page {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: var(--paper-warm);
+    }
+    .error-code {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(5rem, 18vw, 10rem);
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      opacity: 0.25;
+    }
+    .error-title {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .error-text {
+      color: var(--ink-mid);
+      max-width: 420px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+    .error-logo {
+      margin-bottom: 2rem;
+    }
+    .error-logo img {
+      max-height: 48px;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <div class="error-logo">
+      <a href="index.html">
+        <img src="logo.jpg" alt="Salong K">
+      </a>
+    </div>
+    <div class="error-code" aria-hidden="true">404</div>
+    <h1 class="error-title">Den här sidan hittades inte</h1>
+    <p class="error-text">Det ser ut som att du hamnat lite fel. Kanske en gammal länk, eller ett stavfel i adressen. Inga bekymmer — du hittar oss precis som vanligt på startsidan.</p>
+    <a href="index.html" class="btn btn-primary">Tillbaka till Salong K</a>
+  </main>
+</body>
+</html>
